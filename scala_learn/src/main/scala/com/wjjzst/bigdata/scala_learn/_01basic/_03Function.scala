@@ -3,13 +3,13 @@ package com.wjjzst.bigdata.scala_learn._01basic
 object _03Function {
 
   def main(args: Array[String]): Unit = {
-    println("**************" + "square" + "**************")
+    println("************** " + "square" + " **************")
     println(square(20))
-    println("\n**************" + "printByValue" + "**************")
+    println("\n************** " + "printByValue" + " **************")
     printByValue(square(10))
-    println("\n**************" + "printByName" + "**************")
+    println("\n************** " + "printByName" + " **************")
     printByName(square(10))
-    println("\n**************" + "printByFunction" + "**************")
+    println("\n************** " + "printByFunction" + " **************")
     printByFunction(() => square(10))
   }
 
