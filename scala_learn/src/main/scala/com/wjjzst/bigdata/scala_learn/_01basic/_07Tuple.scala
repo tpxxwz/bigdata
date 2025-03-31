@@ -13,13 +13,13 @@ object _07Tuple {
     // tuple 的长度不能超过22，定义为 new Tuple23 就报错
 
     // 遍历
-    println("\n**************" + "tuple 遍历" + "**************")
+    println("\n************** " + "tuple 遍历" + " **************")
     t4.productIterator.foreach { x =>
       println(x)
     }
 
     t4.productIterator.map {
-      x => x + "!!!"
+      x => x.+("!!!") // +()
     }.foreach {
       s => println(s)
     }
