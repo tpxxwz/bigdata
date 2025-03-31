@@ -9,7 +9,7 @@ object _07Tuple {
     // tuple后面的数字表示可以存放的数据个数
     val t3 = new Tuple3[String, String, Int]("lisi", "深圳", 33)
     // 不指定就根据数据内容反推类型
-    val t4 = new Tuple4("tom", "shanghai", 22, 20)
+    val t4 = Tuple4("tom", "shanghai", 22, 20)
     // tuple 的长度不能超过22，定义为 new Tuple23 就报错
 
     // 遍历
@@ -19,7 +19,7 @@ object _07Tuple {
     }
 
     t4.productIterator.map {
-      x => x.+("!!!") // +()
+      x => x.toString + "!!!"
     }.foreach {
       s => println(s)
     }
