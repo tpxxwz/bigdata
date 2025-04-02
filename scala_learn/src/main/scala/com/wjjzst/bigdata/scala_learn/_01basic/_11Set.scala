@@ -35,7 +35,7 @@ object _11Set {
 
     println("\n************** " + "Set sort" + " **************")
     //    var ss = collection.SortedSet("10", "22", "21", "32", "5") // collection.SortedSet 不可变
-    //    var ss = immutable.SortedSet("10", "22", "21", "32", "5")
+    //    var ss = immutable.SortedSet("10", "22", "21", "32", "5") 才支持 ss += "88"
     //    val ss = immutable.SortedSet("10", "22", "21", "32", "5") // immutable.SortedSet 定义的 val ss 是不可以 += append的
     val ss = mutable.SortedSet("10", "22", "21", "32", "5") // mutable.SortedSet 定义的 val ss 是可以 += append的
     ss += "88"
